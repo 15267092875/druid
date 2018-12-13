@@ -51,7 +51,7 @@ public class ConfigTools {
         String[] arr = genKeyPair(512);
         System.out.println("privateKey:" + arr[0]);
         System.out.println("publicKey:" + arr[1]);
-        System.out.println("password:" + encrypt(arr[0], password));
+	System.out.println("明文:" + decrypt(arr[1], password));
 	}
 
 	public static String decrypt(String cipherText) throws Exception {
