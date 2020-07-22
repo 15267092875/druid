@@ -52,7 +52,7 @@ public class ConfigTools {
         String[] arr = genKeyPair(512);
         System.out.println("密文:" + password);
         System.out.println("publicKey:" + pubkey);
-	System.out.println("明文:" + decrypt(pubkey，password));
+	System.out.println("明文:" + decrypt(pubkey,password));
 	}
 
 	public static String decrypt(String cipherText) throws Exception {
