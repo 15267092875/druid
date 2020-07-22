@@ -48,10 +48,11 @@ public class ConfigTools {
 
 	public static void main(String[] args) throws Exception {
         String password = args[0];
+	String pubkey = args[1];
         String[] arr = genKeyPair(512);
-        System.out.println("privateKey:" + arr[0]);
-        System.out.println("publicKey:" + arr[1]);
-	System.out.println("明文:" + decrypt(password));
+        System.out.println("密文:" + password);
+        System.out.println("publicKey:" + pubkey);
+	System.out.println("明文:" + decrypt(pubkey，password));
 	}
 
 	public static String decrypt(String cipherText) throws Exception {
